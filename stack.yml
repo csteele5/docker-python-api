@@ -18,6 +18,7 @@ Resources:
            stable"
         apt-get update
         apt-get install -y docker-ce
+        apt-get install docker-compose
         usermod -aG docker ubuntu
         mkdir -p /etc/systemd/system/docker.service.d
         printf "[Service]\nExecStart=\nExecStart=/usr/bin/dockerd -H fd:// -H tcp://0.0.0.0:2375\n" >>  /etc/systemd/system/docker.service.d/docker.conf
