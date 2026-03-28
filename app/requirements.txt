@@ -2,4 +2,4 @@
 #Flask.ext
 flask
 flask_restful
-markdown==2.6.11
+markdown==3.8.1
